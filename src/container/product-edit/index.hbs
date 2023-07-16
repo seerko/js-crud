@@ -1,0 +1,80 @@
+{{> navigation}}
+<main class='main container'>
+  <section class='mb-5'>
+    <div class='form'>
+      <h1 class='text-primary mt-5 mb-3'>Редагування товару</h1>
+      <div class='card shadow'>
+        <div class='card-body'>
+          <h2 class='card-title mb-3'>Інформація про товар</h2>
+          <form method='POST' action='/product-edit'>
+            <div class='row'>
+              <div class='mb-3 col-md'>
+                <label for='name' class='form-label'>Назва
+                  товару</label>
+                <input
+                  value='{{product.name}}'
+                  type='text'
+                  class='form-control'
+                  name='name'
+                  aria-describedby='emailHelp'
+                />
+              </div>
+              <div class='mb-3 col-md'>
+                <label
+                  for='price'
+                  class='form-label'
+                >Ціна</label>
+                <input
+                  value='{{product.price}}'
+                  type='number'
+                  class='form-control'
+                  name='price'
+                />
+              </div>
+              <div class='mb-3 col-md'>
+                <label
+                  for='id'
+                  class='form-label'
+                >ID</label>
+                <input
+                  value='{{product.id}}'
+                  type='number'
+                  class='form-control'
+                  name='id'
+                />
+              </div>
+            </div>
+            <div class='mb-3'>
+              <label
+                for='description'
+                class='form-label'
+              >Короткий опис товару</label>
+              <textarea
+                class='form-control'
+                name='description'
+                rows='3'
+              >{{product.description}}</textarea>
+              <div
+                name='descriptionHelp'
+                class='form-text'
+              >Відображається у карточці товару</div>
+            </div>
+            <div class='row row-cols-1 row-cols-md-2 g-4'>
+              <div class='col-md'>
+                <button
+                  class='col-12 btn btn-primary'
+                >Зберегти оновлення</button>
+              </div>
+              <div class='col-md'>
+                <a
+                  href='/product-delete?id={{product.id}}'
+                  class='col-12 btn btn-danger'
+                >Видалити товар</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
