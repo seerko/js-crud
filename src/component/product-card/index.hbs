@@ -1,0 +1,29 @@
+<div class='col-md'>
+  <div class='card shadow'>
+    <div
+      class='card-body row d-flex justify-content-between'
+    >
+      <h4 class='card-title mb-3'>{{name}}</h4>
+      <div class='card-text'>
+        <p>{{description}} </p>
+        <p class='text-secondary text-opacity-50'>ID:
+          {{id}}</p>
+        <div
+          class='row d-flex justify-content-between fw-bold'
+        >
+          <div class='col-md'>
+            {{price}}₴
+          </div>
+          <div
+            class='col-md d-flex justify-content-end align-items-center'
+          >
+            <a
+              href='/product-edit?id={{id}}'
+              class='link-underline link-underline-opacity-0'
+            >Редагувати</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

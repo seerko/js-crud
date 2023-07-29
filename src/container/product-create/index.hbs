@@ -1,0 +1,56 @@
+{{> navigation}}
+<main class='main container'>
+  <section class='mb-5'>
+    <div class='form'>
+      <h1 class='text-primary mt-5 mb-3'>Створення товару</h1>
+      <div class='card shadow'>
+        <div class='card-body'>
+          <h2 class='card-title mb-3'>Інформація про товар</h2>
+          <form method='POST' action='/product-create'>
+            <div class='row'>
+              <div class='mb-3 col-md'>
+                <label for='name' class='form-label'>Назва
+                  товару</label>
+                <input
+                  type='text'
+                  class='form-control'
+                  name='name'
+                  aria-describedby='emailHelp'
+                />
+              </div>
+              <div class='mb-3 col-md'>
+                <label
+                  for='price'
+                  class='form-label'
+                >Ціна</label>
+                <input
+                  type='number'
+                  class='form-control'
+                  name='price'
+                />
+              </div>
+            </div>
+            <div class='mb-3'>
+              <label
+                for='description'
+                class='form-label'
+              >Короткий опис товару</label>
+              <textarea
+                class='form-control'
+                name='description'
+                rows='3'
+              ></textarea>
+              <div
+                id='descriptionHelp'
+                class='form-text'
+              >Відображається у карточці товару</div>
+            </div>
+            <div class='d-grid'>
+              <button class='btn btn-primary'>Створити товар</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
