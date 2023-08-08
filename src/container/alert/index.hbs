@@ -4,14 +4,14 @@
       <div class='card shadow'>
         <div class='card-body row g-4'>
           <div class='col-md'>
-            <h5 class='card-title'>{{title}}</h5>
-            <p class='m-0'>{{info}}</p>
+            <h5 class='card-title'>{{data.message}}</h5>
+            <p class='m-0'>{{data.info}}</p>
           </div>
           <div
             class='col-md d-flex justify-content-end align-items-center'
           >
             <a
-              href='/product-list'
+              href='{{data.link}}'
               class='btn btn-primary px-5'
             >Повернутись назад</a>
           </div>

@@ -1,0 +1,62 @@
+@use '../../lib/service.scss' as s;
+
+@use '../../component/heading/style.scss' as heading;
+@use '../../component/purchase-product/style.scss' as
+  purchaseProduct;
+@use '../../component/field/style.scss' as field;
+@use '../../component/divider/style.scss' as divider;
+@use '../../component/button/style.scss' as button;
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: s.space(10);
+  padding: s.space(10);
+}
+
+.product-list {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: s.space(5);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: s.space(4);
+}
+
+.product-info__image {
+  max-height: 300px;
+  width: 100%;
+}
+
+.product-info__title {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.product-info__subtitle {
+  font-size: 16px;
+  color: s.color(text);
+}
+
+.product-info__category {
+  padding: s.space(1) s.space(3);
+  border-radius: 30px;
+  font-size: 14px;
+  color: s.color(text);
+  border: 1px solid transparent;
+}
+
+.product-info__category--1 {
+  border-color: blue;
+  color: blue;
+}
+
+.product-info__category--2 {
+  border-color: green;
+  color: green;
+}
