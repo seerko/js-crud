@@ -1,0 +1,21 @@
+<main class="main">
+
+	{{#with data}}
+
+	{{> heading title="Мої замовлення"}}
+
+	{{#each list}}
+	<a href="\purchase-info?id={{id}}" class="purchase-list__link">
+		<div class="purchase-list__item">
+			{{> field-text label="ID:" value=id}}
+			{{> field-text label="Товари" value=title}}
+			{{> field-text label="Сума замовлення" value=totalPrice price=true}}
+			{{> field-text label="Нараховані бонуси" value=bonus price=true}}
+		</div>
+	</a>
+	{{> divider}}
+
+
+	{{/each}}
+	{{/with}}
+</main>
