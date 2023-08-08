@@ -1,0 +1,16 @@
+.field-text {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  width: 100%;
+}
+
+.field-text__label {
+  color: #808080;
+}
+
+.field-text__value {
+  color: #000;
+}
+
+/*# sourceMappingURL=style.css.map */
