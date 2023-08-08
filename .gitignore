@@ -59,3 +59,7 @@ typings/
 .next
 
 package-lock.json
+
+/public/dist
+public/dist
+dist
